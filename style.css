@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(sidekix-media-3CJAeBNi2YM-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: relative;
+  overflow-y: visible;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container1 {
+  width: 100%;
+  height: 60px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  margin: 0 30px;
+}
+
+ul {
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+li a:visited {
+  color: white;
+}
+
+li a:hover {
+  color: green;
+}
+
+li a:active {
+  color: green;
+}
+
+.title {
+  color: white;
+  font-size: 40px;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.title a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Pacifico', cursive;
+}
+
+@media (max-width: 768px) {
+  ul {
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+  }
+
+  li {
+      margin: 10px 0;
+  }
+}
+
+.contact-form {
+  width: 85%;
+  max-width: 600px;
+  background-color: rgb(78, 119, 15);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000b3;
+  font-family: 'Monserrat', sans-serif;
+}
+
+.contact-form h2 {
+  margin-top: 0;
+  font-weight: 200;
+}
+
+.txtb {
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.txtb label {
+  display: block;
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.txtb input,
+.txtb textarea {
+  width: 100%;
+  border: 1px solid white;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+  padding: 8px;
+  color: white;
+}
+
+.btn {
+  display: block;
+  background: white;
+  padding: 14px 0;
+  color: black;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 100%;
+  padding: 20px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer .footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer .footer-content .footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer .footer-content .footer-section:last-child {
+  margin-right: 0;
+}
+
+.footer .footer-content .footer-section.social ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer-content .footer-section.social ul li {
+  margin-right: px;
+}
+
+.footer .footer-content .footer-section.social ul li:last-child {
+  margin-right: 0;
+}
+
+.footer .footer-content .footer-section.social ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .footer-content .footer-section.social ul li a:before {
+  display: inline-block;
+  font-family: 'Font Awesome';
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  content: '\f09a';
+  margin-right: 5px;
+}
+
+.footer-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.wrapper {
+  margin-top: 3%;
+}
+
+.wrapper h1 {
+  font-family: allura;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+}
+
+.team {
+  display: flex;
+  text-align: center;
+  width: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member {
+  background: rgb(78, 119, 15);
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: whitesmoke;
+  position: relative;
+}
+
+.team .team_member h3 {
+  color: whitesmoke;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role {
+  color: black;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 12px 0;
+}
+
+.team .team_member .team_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(78, 119, 15);
+}
+
+.team .team_member .team_img img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.h-txt {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.h-txt span {
+  letter-spacing: 5px;
+  color: gray;
+}
+
+.h-txt h1 {
+  font-size: 4em;
+  color: white;
+}
+
+.h-txt a {
+  text-decoration: none;
+  background: rgb(78, 119, 15);
+  color: black;
+  padding: 10px 20px;
+  letter-spacing: 5px;
+}
+
+input[type="radio"]{
+  display: none;
+}
+.container{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container h1 {
+  font-weight: normal;
+  font-size: 35px;
+  position: relative;
+  margin: 20px;
+}
+
+.container h1::before{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate{
+  0%{
+      width: 100px;
+  }
+  50%{
+      width: 200px;
+  }
+  100%{
+      width: 100px;
+  }
+}
+
+.top-content{
+  background-color: rgb(201, 197, 197);
+  width: 100%;
+  margin: 0 auto 20px auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgb(215, 231, 215);
+}
+
+.top-content h3{
+  height: 100%;
+  background-color: rgb(141, 137, 137);
+  line-height: 55px;
+  padding: 0 50px;
+  color: white;
+}
+
+label{
+  display: inline-block;
+  height: 100%;
+  margin: 0 25px;
+  line-height: 50px;
+  font-size: 18px;
+  color: grey;
+  cursor: pointer;
+  transition: color .5s;
+}
+
+label:hover{
+  color: green;
+}
+
+.Photo-Gallery{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.pic{
+  position: relative;
+  height: 240px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px lightgrey;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.pic img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+.pic::before{
+  content: "Inspo Decors";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: -100px;
+  opacity: 0;
+  transition: .3s;
+  transition-delay: .2s;
+  z-index: 1;
+}
+
+.pic::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  height: 0;
+  background-color: rgba(0,0,0,.4);
+  transition: .3s;
+}
+
+.pic:hover:after{
+  height: 100%;
+}
+
+.pic:hover::before{
+  margin-top: 0;
+  opacity: 1;
+}
+
+#check1:checked ~ .container .Photo-Gallery .pic{
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: .5s;
+}
+
+#check2:checked ~ .container .Photo-Gallery .Living-Room{
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+}
+#check2:checked ~ .container .Photo-Gallery .Dining-Room,
+#check2:checked ~ .container .Photo-Gallery .Kitchen,
+#check2:checked ~ .container .Photo-Gallery .Bathroom{
+  opacity: 0;
+  transform: scale(0);
+  position: relative;
+  transition: .0s;
+}
+
+#check3:checked ~ .container .Photo-Gallery .Dining-Room{
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+}
+#check3:checked ~ .container .Photo-Gallery .Kitchen,
+#check3:checked ~ .container .Photo-Gallery .Living-Room,
+#check3:checked ~ .container .Photo-Gallery .Bathroom{
+  opacity: 0;
+  transform: scale(0);
+  position: relative;
+  transition: .0s;
+}
+
+#check4:checked ~ .container .Photo-Gallery .Kitchen{
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+}
+#check4:checked ~ .container .Photo-Gallery .Dining-Room,
+#check4:checked ~ .container .Photo-Gallery .Living-Room,
+#check4:checked ~ .container .Photo-Gallery .Bathroom{
+  opacity: 0;
+  transform: scale(0);
+  position: relative;
+  transition: .0s;
+}
+
+#check5:checked ~ .container .Photo-Gallery .Bathroom{
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+}
+#check5:checked ~ .container .Photo-Gallery .Living-Room,
+#check5:checked ~ .container .Photo-Gallery .Dining-Room,
+#check5:checked ~ .container .Photo-Gallery .Kitchen{
+  opacity: 0;
+  transform: scale(0);
+  position: relative;
+  transition: .0s;
+}
+
